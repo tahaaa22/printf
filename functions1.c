@@ -33,6 +33,8 @@ int print_string(va_list args)
 	char *c  = va_arg(args, char*);
 	int i;
 
+	if (!c)
+		return(0);
 	for (i = 0; c[i] != '\0'; i++)
 		_putchar(c[i]);
 	return (i);

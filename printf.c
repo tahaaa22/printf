@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 	va_list list;
 
 	if (!format)
-		return (-1);
+		return (0);
 	va_start(list, format);
 	for (i = 0; format[i] != '\0'; i++)
 	{
@@ -35,7 +35,7 @@ int _printf(const char *format, ...)
 			counter += print_int(num);
 		}
 		else if (format[i] == '%' && (format[i + 1] == ' ' || format[i + 1] == '\0'))
-			return (-1);
+			return (0);
 		else if (format[i] == '\'' && format[i + 1] == 'n')
 		{
 			_putchar('\n');

@@ -39,7 +39,7 @@ int print_string(va_list args)
 		s = "(null)";
 		for (i = 0; i != s[i]; i++)
 			_putchar(s[i]);
-		return (len);
+		return (i);
 	}
 	for (i = 0; c[i] != '\0'; i++)
 		_putchar(c[i]);

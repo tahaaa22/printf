@@ -3,8 +3,6 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <unistd.h>
-#include "_printf.c"
-#include "functions2.c"
 
 int print_int(int num);
 int _putchar(char c);

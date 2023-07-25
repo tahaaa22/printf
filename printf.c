@@ -40,7 +40,8 @@ int _printf(const char *format, ...)
 		{
 			_putchar('\n');
 			i++;
-		}
+		}else
+			return (-1);
 		if (format[i] == '%')
 			i++;
 	}

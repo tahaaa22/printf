@@ -1,6 +1,16 @@
 #include "main.h"
 
 /**
+  * _putchar - puts char
+  * @c : char to br put
+  * Return: 1 on success
+  */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
+
+/**
   * print_char - prints char
   * @args : variable to be printed
   * Return: 1 on success

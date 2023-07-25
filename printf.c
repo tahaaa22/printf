@@ -27,7 +27,7 @@ int _printf(const char *format, ...)
 		else if (format[i] == '%' && format[i + 1] == 's')
 			counter += print_string(list);
 		else if (format[i] == '%' && format[i + 1] == '%')
-			counter += print_percentage(void);
+			counter += print_percentage();
 		else if (format[i] == '%' && (format[i + 1] == 'd' || format[i + 1] == 'i'))
 		{
 			int num = va_arg(list, int);

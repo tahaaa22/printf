@@ -34,7 +34,7 @@ int print_string(va_list args)
 	int i;
 
 	if (!c)
-		return(0);
+		return (-1);
 	for (i = 0; c[i] != '\0'; i++)
 		_putchar(c[i]);
 	return (i);

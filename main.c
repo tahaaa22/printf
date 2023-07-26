@@ -29,6 +29,12 @@ int main(void)
 									     _printf("Len:[%d]\n", len);
 									         printf("Len:[%d]\n", len);
 										 _printf("%s" ,"yo");
+										 _printf("%k");
+										 _printf("%%");_printf("%");
+										 _printf(NULL);
+										 _printf("%s" ,NULL);
+
+
 
 
 
